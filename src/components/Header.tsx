@@ -10,7 +10,7 @@ function Header() {
   ];
 
   return (
-    <header className="bg-terra-claro text-terra-escuro shadow-md font-[Quicksand]">
+    <header className="text-terra-escuro shadow-md">
       <div className="max-w-5xl mx-auto flex justify-between items-center py-4 px-6 border-b border-terra-escuro">
         <span className="text-xl font-bold tracking-tight text-terra-vinho">Meu Portfólio</span>
         <nav>

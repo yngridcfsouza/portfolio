@@ -17,13 +17,13 @@ function Home() {
   }, []);
 
   return (
-    <main className="bg-terra-claro flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center">
       <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4">
         <div className="w-[500px] h-[500px] md:w-1/2 flex justify-center items-center md:mb-0">
           <img
-            src="src/assets/home.png"
+            src="./public/assets/home.png"
             alt="Mulher programando em ambiente moderno"
-            className={`w-full h-full md:h-full object-cover rounded-3xl transition-all duration-700 ease-out
+            className={`w-full h-full md:h-full object-cover rounded-full transition-all duration-700 ease-out
               ${showImage ? 'opacity-80 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}
           />
         </div>
@@ -34,9 +34,14 @@ function Home() {
             Olá, me chamo Yngrid
           </h1>
           <p className="text-lg text-terra-escuro rounded-lg p-4 max-w-xl text-center">
-            Sou uma Desenvolvedora Web Full-Stack que adora transformar ideias em Softwares elegantes e inteligentes
+            Sou Desenvolvedora Web Full-Stack e adoro transformar ideias em Softwares elegantes e inteligentes
           </p>
         </div>
+
+        <div>
+          <small>Gosta de um som ambiente legal? Clica no botão de play lá no rodapé ;D</small>
+        </div>
+
       </section>
 
       {/* Seção de indicações */}
@@ -50,10 +55,10 @@ function Home() {
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
           {/* Exemplo de indicação */}
           <div className="bg-white rounded-xl shadow-md p-4 w-72 border-l-4 border-terra-vinho">
-            <h3 className="font-bold text-terra-vinho mb-2">Clean Code</h3>
-            <p className="text-terra-escuro text-sm mb-2">Robert C. Martin</p>
+            <h3 className="font-bold text-terra-vinho mb-2">O Programador Pragmático: De Aprendiz a Mestre</h3>
+            <p className="text-terra-escuro text-sm mb-2"> Andrew Hunt e David Thomas </p>
             <a
-              href="https://www.amazon.com.br/Clean-Code-Robert-C-Martin/dp/0132350882"
+              href="https://www.amazon.com.br/Programador-Pragm%C3%A1tico-Aprendiz-Mestre-ebook/dp/B019HM0H90"
               target="_blank"
               rel="noopener noreferrer"
               className="text-terra-rosa underline hover:text-terra-vinho text-sm"

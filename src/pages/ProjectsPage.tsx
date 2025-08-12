@@ -18,7 +18,7 @@ const projetos = [
 ];
 
 const ProjectsPage: React.FC = () => (
-  <div className="bg-terra-claro min-h-screen py-12">
+  <div className="min-h-screen py-12">
     <h1 className="text-4xl font-bold text-center mb-12 text-terra-escuro">Meus Projetos</h1>
     <div className="flex flex-col gap-16 max-w-4xl mx-auto">
       {projetos.map((proj, idx) => (
