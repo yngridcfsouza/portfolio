@@ -48,7 +48,7 @@ export default function AboutPage() {
           <div className="lg:col-span-1">
             <div className={`w-full h-64 sm:h-72 lg:h-full min-h-[260px] rounded-xl overflow-hidden shadow-lg bg-white/70 dark:bg-black/60 backdrop-blur-sm border border-black/10 dark:border-white/20 transition-all duration-500 ease-out ${enter ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'} delay-100 flex items-center justify-center`}>
               <img
-                src="/assets/formal.jfif"
+                src={`${import.meta.env.BASE_URL}assets/formal.jfif`}
                 alt="Minha foto ou avatar"
                 className="w-full h-full object-cover"
               />

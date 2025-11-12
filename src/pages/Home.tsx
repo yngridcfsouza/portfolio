@@ -99,7 +99,7 @@ function Home() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <motion.img
-              src="/assets/home.png"
+              src={`${import.meta.env.BASE_URL}assets/home.png`}
               alt="Mulher programando em ambiente moderno"
               className="w-full h-full md:h-full object-cover rounded-full"
               whileHover={{ scale: 1.02, rotateZ: -0.5 }}

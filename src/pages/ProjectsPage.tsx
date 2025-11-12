@@ -6,14 +6,14 @@ const projetos = [
   {
     nome: 'Fincheck',
     descricao: 'Fincheck é um sistema de gerenciamento financeiro pessoal, desenvolvido com foco em controle de contas bancárias, transações, receitas e despesas. A aplicação permite organizar suas finanças de forma prática e visual, oferecendo uma experiência fluida com foco em usabilidade, performance e acessibilidade. O projeto foi desenvolvido com as seguintes tecnologias: React.js, TypeScript, Radix UI, React Hook Form, React Number Format, React Day Picker, TailwindCSS, Vite e Nest.js, além de possuir um sistema de contexto para autenticação do usuário e tokens JWT para validação.',
-    imagem: '/assets/fincheck.bmp',
+    imagem: 'assets/fincheck.bmp',
     github: 'https://github.com/yngridcfsouza/fincheck-project',
     visite: 'https://yngridcfsouza.github.io/fincheck-project/',
   },
   {
     nome: 'Grocery list com Zustand',
     descricao: 'Aplicação manipulando um estado global usando Zustand, construída com React + TypeScript e Vite. O projeto demonstra padrões simples e eficientes de gerenciamento de estado, persistência no localStorage e composição de componentes com TailwindCSS.',
-    imagem: '/assets/grocery-list.bmp',
+    imagem: 'assets/grocery-list.bmp',
     github: 'https://github.com/yngridcfsouza/grocery-list-with-zustand',
     visite: 'https://yngridcfsouza.github.io/grocery-list-with-zustand/',
   },
@@ -43,7 +43,7 @@ const ProjectsPage: React.FC = () => (
           variants={itemVariants}
         >
           <motion.img
-            src={proj.imagem}
+            src={`${import.meta.env.BASE_URL}${proj.imagem}`}
             alt={`Home do projeto ${proj.nome}`}
             className="w-full h-full md:w-1/2 object-cover rounded-2xl shadow-lg"
             initial={{ opacity: 0, scale: 0.98 }}
