@@ -56,7 +56,7 @@ export default function AboutPage() {
           </div>
 
           {/* Cartões Missão e Valores */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 text-justify">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className={`rounded-lg p-4 bg-white/70 dark:bg-black/60 border border-black/10 dark:border-white/20 shadow transition-all duration-500 ease-out ${enter ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'} delay-200`}>
                 <h3 className="text-sm font-semibold mb-1 text-terra-escuro dark:text-terra-claro">Missão</h3>
@@ -77,7 +77,7 @@ export default function AboutPage() {
         </div>
 
         {/* Texto de apresentação abaixo do topo */}
-        <article className={`mt-6 rounded-xl bg-white/70 dark:bg-black/60 backdrop-blur-sm border border-black/10 dark:border-white/20 shadow-lg p-5 sm:p-6 transition-all duration-500 ease-out ${enter ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'} delay-400`}>
+        <article className={`mt-6 rounded-xl bg-white/70 dark:bg-black/60 backdrop-blur-sm border border-black/10 dark:border-white/20 shadow-lg p-5 sm:p-6 text-justify transition-all duration-500 ease-out ${enter ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'} delay-400`}>
           <h2 className="text-lg sm:text-xl font-medium mb-3 text-terra-escuro dark:text-terra-claro">Apresentação</h2>
           <div className="text-sm sm:text-base leading-relaxed">
             <p>Olá, eu sou Yngrid Ferreira, desenvolvedora full stack júnior e tenho brilho nos olhos quando trabalho com código.</p>

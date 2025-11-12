@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SPA GitHub Pages: redireciona para /<repo>/index.html com a rota original em ?p= -->
+    <script type="text/javascript">
+      (function(l) {
+        try {
+          var parts = l.pathname.split('/');
+          var base = '/' + (parts[1] || '') + '/'; // e.g. '/portfolio/'
+          var indexUrl = base + 'index.html';
+
+          // Se já estiver no index, não faz nada
+          if (l.pathname === indexUrl) return;
+
+          // Redireciona para o index com a rota original
+          var original = l.pathname + (l.search || '') + (l.hash || '');
+          l.replace(indexUrl + '?p=' + encodeURIComponent(original));
+        } catch (e) {
+          // Em caso de erro, não bloqueia
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
