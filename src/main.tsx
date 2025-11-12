@@ -6,7 +6,8 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* Basename para publicação em GitHub Pages (username.github.io/portfolio) */}
+    <BrowserRouter basename="/portfolio">
       <App />
     </BrowserRouter>
   </React.StrictMode>

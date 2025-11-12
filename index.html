@@ -1,10 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Web Development</title>
+    <title>Portfólio | Yngrid Souza</title>
+    <!-- SPA GitHub Pages: restaura rota original quando carregado via 404.html?p= -->
+    <script type="text/javascript">
+      (function(l) {
+        try {
+          var params = new URLSearchParams(l.search);
+          var p = params.get('p');
+          if (p) {
+            var decoded = decodeURIComponent(p);
+            // Substitui a URL atual para a rota original do SPA
+            window.history.replaceState(null, null, decoded + l.hash);
+          }
+        } catch (e) {
+          // silenciosamente ignora caso URLSearchParams não esteja disponível
+        }
+      })(window.location);
+    </script>
   </head>
   <body>
     <div id="root"></div>
