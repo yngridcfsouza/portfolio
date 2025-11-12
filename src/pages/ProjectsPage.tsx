@@ -33,7 +33,7 @@ const itemVariants: Variants = {
 };
 
 const ProjectsPage: React.FC = () => (
-  <motion.div className="min-h-screen py-12 transition-colors duration-500" variants={containerVariants} initial="hidden" animate="visible">
+  <motion.div className="min-h-screen py-12 px-6 transition-colors duration-500" variants={containerVariants} initial="hidden" animate="visible">
     <motion.h1 className="text-4xl font-bold text-center mb-12 text-terra-escuro dark:text-terra-claro" variants={itemVariants}>Meus Projetos</motion.h1>
     <motion.div className="flex flex-col gap-16 max-w-4xl mx-auto" variants={containerVariants}>
       {projetos.map((proj, idx) => (
